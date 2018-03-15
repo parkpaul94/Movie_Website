@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Movie Website</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <nav class="navigation">
+                <a class="headfont" href="index.html">Movies</a>
+                <div class="contain">
+                    <ul class="nav">
+
+                        <a class="navlink" href="index.html">Home</a>
+                        <a class="navlink" href="#">Features</a>
+                        <a class="navlink" href="#">Pricing</a>
+                        <a class="navlink" href="#">About</a>
+                    </ul>
+                    <div class ="navsearch">
+                    <form id ="nav_search">
+                        <input type="text" class="mainsearch searchbar" id ="searchText" placeholder="Search">
+                    <button class="button" type="submit">Search</button>
+                    </form>
+                </div>
+        </nav>
+
+        <!-- <div class ="searchcc">
+            <div class ="mainc">
+                <h3>Search For Any Movie</h3>
+                <form id ="movie_search">
+                    <input type="text" class="mainsearch ms" id ="searchText"  placeholder="Search Movies">
+                </form>
+            </div>
+        </div> -->
+
+        <div class ="cc">
+            <div id ="movies" class ="row"></div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src ="assets/javascript/js.js"></script>
+    </body>
+</html>

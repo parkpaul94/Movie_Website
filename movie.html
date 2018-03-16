@@ -5,7 +5,8 @@
         <title>Movie Website</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/reset.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
 
     </head>
     <body>
@@ -14,7 +15,7 @@
                 <a class="headfont" href="index.html">Movies</a>
                 <div class="contain">
                     <ul class="nav">
-
+                        
 <!-- ================== TRYING TO MAKE IT SO YOU CAN SEARCH BY GENRES OR WHATEVER IT IS YOU WANT ================== -->
 
                         <!-- <a class="navlink" href="index.html">Home</a>
@@ -33,24 +34,15 @@
                 </div>
         </nav>
 
-        <!-- <div class ="searchcc">
-            <div class ="mainc">
-                <h3>Search For Any Movie</h3>
-                <form id ="movie_search">
-                    <input type="text" class="mainsearch ms" id ="searchText"  placeholder="Search Movies">
-                </form>
-            </div>
-        </div> -->
+    <div class ="cc">
+        <div id ="movie" class ="well"></div>
+    </div>
 
-        <div class ="cc">
-            <div id ="searchedFor"></div>
-            <div id ="movie-list" class ="row"></div>
-        </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src ="assets/javascript/javascript.js"></script>
     <script>
-        // searchedMovie();
+        movieChosen();
     </script>
     </body>
 </html>

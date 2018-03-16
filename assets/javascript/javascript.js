@@ -32,6 +32,7 @@ var MovieSearch = function(searched) {
     $('#movie-list').html(output);
     $('#searchedFor').html('<h2 class ="searchtext">Search Results for:<br>' + searched);
     // sessionStorage.setItem('searchedM', searched);
+    
     console.log(searched);
   })
 };   
@@ -49,7 +50,6 @@ function movieSelected(Info) {
     window.location = 'movie.html';
     return false;
 }
-
 
 function movieChosen() {
     var mID = sessionStorage.getItem('mID')
@@ -71,6 +71,8 @@ function movieChosen() {
         <li class="list"><strong>Released:</strong> ${movie.Released}</li>
         <li class="list"><strong>Rated:</strong> ${movie.Rated}</li>
         <li class="list"><strong>IMDB Rating:</strong> ${movie.imdbRating}</li>
+        <li class="list"><strong>${movie.Ratings[1].Source}:</strong> ${movie.Ratings[1].Value}</li>
+        <li class="list"><strong>${movie.Ratings[2].Source}:</strong> ${movie.Ratings[2].Value}</li>
         <li class="list"><strong>Director:</strong> ${movie.Director}</li>
         <li class="list"><strong>Writer:</strong> ${movie.Writer}</li>
         <li class="list"><strong>Actors:</strong> ${movie.Actors}</li>
@@ -120,4 +122,25 @@ function movieChosen() {
 //     // sessionStorage.setItem('searchedM', searched);
 //     console.log(searched);
 //   })
+// };   
+
+// function SeachedMovies() {
+//   $('#searchedFor').show();
+//   var mID = sessionStorage.getItem('sMovie')
+//     axios.get("https://www.omdbapi.com/?apikey=trilogy&s=" + sMovie)
+//     .then(function(response) {
+//     console.log(response);
+//     let movies = response.data.Search;
+//     let output = `
+//         <div class="movies">
+//           <div class="center">
+//             <img class="posterimage" src="${movie.Poster}">
+//             <h5 class="postername">${movie.Title}</h5>
+//             <a onclick="movieSelected('${movie.imdbID}')" class="moreinfo" href="#">More Info</a>
+//           </div>
+//         </div>
+//       `;
+//     });
+//     $('#movie-list').html(output);
+//     $('#searchedFor').html('<h2 class ="searchtext">Search Results for:<br>' + searched);
 // };   
